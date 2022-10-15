@@ -2,6 +2,7 @@
 /**
  * main -entry point
  * return:0
+ *Description: program description.
  */
 int main(void)
 {
