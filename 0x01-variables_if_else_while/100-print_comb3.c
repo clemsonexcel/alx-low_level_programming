@@ -1,28 +1,22 @@
 #include <stdio.h>
 /**
- *main - entry point.
- *return: 0
+ * main - entry point
+ * return: always 0.
  */
 int main(void)
 {
-	int i, k = '0', j;
+	int i, j;
 
-	for (i = '0'; i <= '9'; j++)
+	for (i = 0; i < 9; i++)
 	{
-		for (j = k; j <= '9'; j++)
+		for (j = i + 1; j < 10; j++)
 		{
-			if (i != j)
-			{
-				putchar(i);
-				putchar(j);
-			}
-			if (i == j)
+			putchar((i % 10) + '0');
+			putchar((j % 10) + '0');
+
+			if (i == 8 && j == 9)
 			{
 				continue;
-			}
-			if (i == '8' && j == '9')
-			{
-				break;
 			}
 			else
 			{
@@ -30,8 +24,8 @@ int main(void)
 				putchar(' ');
 			}
 		}
-		k++;
 	}
 	putchar('\n');
 	return (0);
 }
+
