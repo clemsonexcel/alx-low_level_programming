@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print - prints the sign of a number.
+ * print_sign  - prints the sign of a number.
  * @n: number to be checked
  * return: 1 if n is greater than 0
  *  0 if n is equal to 0
@@ -19,7 +19,7 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	else 
+	else
 	{
 		_putchar('-');
 		return (-1);
